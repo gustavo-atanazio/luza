@@ -1,0 +1,20 @@
+@keyframes gradient {
+  from { background-position-x: 0%; }
+  to { background-position-x: 400%; }
+}
+
+.brilliant {
+  height: 5px;
+
+  background: linear-gradient(
+    45deg,
+    rgb(20, 120, 20) 0%,
+    rgb(40, 180, 40) 25%,
+    rgb(80, 220, 80) 50%,
+    rgb(40, 180, 40) 75%,
+    rgb(20, 120, 20) 100%
+  );
+
+  background-size: 400% 100%;
+  animation: gradient 10s linear infinite alternate;
+}
